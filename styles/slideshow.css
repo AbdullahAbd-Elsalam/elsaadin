@@ -1,12 +1,12 @@
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
-  /* height: 700px; */
+  height: 700px;
   position: relative;
   margin: auto;
   /* max-height: 600px; */
   overflow: hidden; /* Hide overflowing content */
-  margin-top: 200px;
+  margin-top: 90px;
 }
 
 /* Hide the images by default */
