@@ -14,6 +14,7 @@ function showSpinner() {
     // Simulate a delay, then hide the spinner
     setTimeout(() => {
       hideSpinner();
+      showSlides();
     }, 3000); // Adjust the delay as needed
   });
   

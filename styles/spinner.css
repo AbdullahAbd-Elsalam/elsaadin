@@ -24,8 +24,8 @@
 
 /* Spinner image styles */
 .spinner-image {
-  width: 800px; /* Adjust size as needed */
-  height: 800px; /* Adjust size as needed */
+  width: 400px; /* Adjust size as needed */
+  height: 400px; /* Adjust size as needed */
   border-radius: 50%; /* Optional: make the image circular */
   object-fit: cover; /* Ensure the image covers the container */
   animation: spin 1s linear infinite;
@@ -40,6 +40,6 @@
 /* Loading text styles */
 .loading-text {
   margin-top: 10px;
-  font-size: 80px; /* Adjust size as needed */
+  font-size: 16px; /* Adjust size as needed */
   color: #333; /* Adjust color as needed */
 }
