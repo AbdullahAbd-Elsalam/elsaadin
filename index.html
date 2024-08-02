@@ -9,24 +9,37 @@
   <!-- Load Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Zain:wght@200;300;400;700;800;900&display=swap" rel="stylesheet">
-  
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&family=Zain:wght@200;300;400;700;800;900&display=swap"
+    rel="stylesheet">
+
   <!-- Load Styles -->
   <link href="styles/bootstrap.min.css" rel="stylesheet">
   <link href="styles/main.css" rel="stylesheet">
-  <link href="css/spinner.css" rel="stylesheet">
+  <link href="styles/spinner.css" rel="stylesheet">
 
-  <script src="scripts/spinner.js"></script>
   <script src="scripts/app.js"></script>
-
-
+  <script src="scripts/spinner.js"></script>
 
 </head>
 
 <body>
 
-  <div id="spinner" class="spinner"></div>
+  <div class="spinner-overlay">
+    <div class="spinner-container">
+      <img src="images/jkjkjk_0002.jpg" alt="Loading..." class="spinner-image">
+      <p class="loading-text">Loading...</p>
+    </div>
+  </div>
 
+  <!-- <div id="spinner" class="spinner-overlay">
+    <img src="images/jkjkjk_0002.jpg" alt="Loading..." class="spinner-image">
+  </div> -->
+
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  
+  
   <!-- HTML Follows BEM naming conventions 
   IDs are only used for sections to connect menu achors to sections -->
   <header class="page__header">

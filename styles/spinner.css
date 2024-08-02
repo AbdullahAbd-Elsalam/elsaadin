@@ -1,25 +1,45 @@
-.spinner {
-    width: 40px;
-    height: 40px;
-    border: 5px solid lightgray;
-    border-top: 5px solid blue;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-    z-index: 2000;
-    /* Hide spinner initially */
+
+/* Spinner overlay styles */
+.spinner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255); /* Semi-transparent white background */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1001; /* Make sure it's on top of other content */
+  display: none; /* Hide spinner initially */
 }
 
-@keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
+/* Spinner container styles */
+.spinner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
-    100% {
-        transform: rotate(360deg);
-    }
+/* Spinner image styles */
+.spinner-image {
+  width: 800px; /* Adjust size as needed */
+  height: 800px; /* Adjust size as needed */
+  border-radius: 50%; /* Optional: make the image circular */
+  object-fit: cover; /* Ensure the image covers the container */
+  animation: spin 1s linear infinite;
+}
+
+/* Keyframes for spinner rotation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Loading text styles */
+.loading-text {
+  margin-top: 10px;
+  font-size: 80px; /* Adjust size as needed */
+  color: #333; /* Adjust color as needed */
 }
